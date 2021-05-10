@@ -52,7 +52,8 @@ extract($row);
           
           <div class="form-group">
             <div class="col-sm-6" align="right">
-              <button type="submit" class="btn btn-success btn-sm" id="btn"> <span class="glyphicon glyphicon-saved"></span> บันทึก </button>      
+              <button type="submit" class="btn btn-success btn-sm" id="btn"> <span class="glyphicon glyphicon-saved"></span> บันทึก </button>   
+              <a href="history.php" class="btn btn-danger btn-sm">Cancel</a>      
             </div> 
 
           </div>

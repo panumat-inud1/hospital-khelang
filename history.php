@@ -18,6 +18,7 @@ error_reporting(E_NOTICE);
       </div>
       <div class="col-md-8"> 
       <a href="history.php?act=add" class="btn-info btn-sm"> เพิ่ม </a>
+      
       <p></p>
       
       <?php
