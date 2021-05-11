@@ -1,4 +1,4 @@
-<p class="h1 text-center">Information Hospatal</p> 
+<p class="h1 text-center">Information Hospital</p> 
 
 <div class="collapse" id="navbarToggleExternalContent">
   <div class="bg-dark p-4">

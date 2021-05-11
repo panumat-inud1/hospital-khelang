@@ -16,21 +16,20 @@ error_reporting(E_NOTICE);
         <?php include('menu_left.php');?>
         
       </div>
-      <div class="col-md-8"> 
+      <div class="col-md-9"> 
           
-      <a href="couter.php?act=add" class="btn-info btn-sm"> สั่ง </a>
+     
       <p></p>
       
       <?php
       
 $act = $_GET['act'];
-if($act == 'add'){
-include('history_form_add.php');
+if($act == 'oder'){
+include('couter_form_oder.php');
 }elseif ($act == 'edit') {
-include('history_form_edit.php');
-}
-else {
-include('history_list.php');
+include('couter_form_edit.php');
+}else {
+include('couter_list.php');
 }
 ?>
 

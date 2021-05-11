@@ -16,9 +16,16 @@ extract($row);
 <input type="hidden" name="h_id" value="<?php echo $h_id; ?>">  
 
       <div class="form-group">
-            <div class="col-sm-6" align="left">    
+            <div class="col-sm-2" align="left">    
               <input  name="h_year" type="text" required class="form-control" id="h_year" value="<?=$h_year; ?>" 
               placeholder="ปี เช่น 64" pattern="^[a-zA-Z0-9]+$" title="ภาษาอังกฤษหรือตัวเลขเท่านั้น" minlength="2"  />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-2" align="left">    
+              <input  name="h_couter" type="text" required class="form-control" id="h_couter" value="<?=$h_couter; ?>"
+              placeholder="Couter" />
             </div>
           </div>
 

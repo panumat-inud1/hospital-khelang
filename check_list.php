@@ -11,44 +11,29 @@
                   //หัวข้อตาราง 
                     echo "
                       <tr bgcolor ='#AED6F1'>
+                      <td>เลขที่ใบเสร็จ</td>
+                      <td>วันที่ตรวจ</td>
                       <td>รหัสผู้ป่วย</td>
-                      <td>วันที่ เวลา</td>
-                      <td>Couter</td>
-                      <td>ค่า Lab บาท</td>
-                      <td>ค่า Xray บาท</td>
-                      <td>ค่า แพทย์ บาท</td>
-                      <td>Total</td>
-                      <td>Oder</td>
-                      <td>Edit</td>
+                      <td>ยอดรวม</td>
+                      <td>ส่วนลด</td>
+                      <td>จำนวณเงิน</td>
                       <td>Delete</td>
                     </tr>";
                 
                   while($row = mysqli_fetch_array($result)) {
                   echo "<tr>";
                     echo "<td>" .$row["h_year"]."-".$row["h_id"]."</td> ";
-                    echo "<td>" .$row["datesave"]."</td> ";
-                    $ckecks = "OPD-C1";
-                    if($row["h_couter"]=$ckecks){
-
-                      echo "<td>" .$row["h_couter"]."</td> ";
-                    }
+                    echo "<td>" .$row["h_sex"] .  "</td> ";
+                    echo "<td>" .$row["h_name"] .  "</td> ";
+                    echo "<td>" .$row["h_family"] .  "</td> ";
+                    echo "<td>" .$row["h_idcasc"] .  "</td> ";
                     
-                    echo "<td>" .$row["h_lab"]."</td> ";
-                    echo "<td>" .$row["h_xay"]."</td> ";
-                    echo "<td>" .$row["h_p"]."</td> ";
-                    echo "<td>" .$row["h_total"]."</td> ";
-                    
-                    
-                    
-                    //สั่ง 
-                    echo "<td><a href='couter.php?act=oder&ID=$row[0]' class='btn btn-warning btn-xs'>สั่ง</a></td> ";
 
                     //แก้ไขข้อมูล
-
-                    echo "<td><a href='couter.php?act=edit&ID=$row[0]' class='btn btn-warning btn-xs'>แก้ไข</a></td> ";
+                    echo "<td><a href='history.php?act=edit&ID=$row[0]' class='btn btn-warning btn-xs'>แก้ไข</a></td> ";
                     
                     //ลบข้อมูล
-                    echo "<td><a href='couter_del_db.php?ID=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
+                    echo "<td><a href='history_del_db.php?ID=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
                   echo "</tr>";
                   }
                 echo "</table>";

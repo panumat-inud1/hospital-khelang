@@ -3,18 +3,27 @@
 <form  name="history" action="history_form_add_db.php" method="POST" id="history" class="form-horizontal">
      
       <div class="form-group">
-            <div class="col-sm-6" align="left">    
+            <div class="col-sm-2" align="left">    
               <input  name="h_year" type="text" required class="form-control" id="h_year" 
               placeholder="ปี เช่น 64" pattern="^[a-zA-Z0-9]+$" title="ภาษาอังกฤษหรือตัวเลขเท่านั้น" minlength="2"  />
             </div>
           </div>
 
           <div class="form-group">
+            <div class="col-sm-2" align="left">    
+              <input  name="h_couter" type="text" required class="form-control" id="h_couter" 
+              placeholder="Couter" />
+            </div>
+          </div>
+          
+          <div class="form-group">
             <div class="col-sm-3" align="left">    
               <input  name="h_sex" type="text" required class="form-control" id="h_sex" 
               placeholder="เพศ" />
             </div>
           </div>
+
+          
 
         <div class="form-group">
             <div class="col-sm-6" align="left">    
