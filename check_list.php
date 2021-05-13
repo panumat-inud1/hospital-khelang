@@ -22,18 +22,18 @@
                 
                   while($row = mysqli_fetch_array($result)) {
                   echo "<tr>";
-                    echo "<td>" .$row["h_year"]."-".$row["h_id"]."</td> ";
-                    echo "<td>" .$row["h_sex"] .  "</td> ";
-                    echo "<td>" .$row["h_name"] .  "</td> ";
-                    echo "<td>" .$row["h_family"] .  "</td> ";
-                    echo "<td>" .$row["h_idcasc"] .  "</td> ";
+                   // echo "<td>" .$row["h_year"]."-".$row["h_id"]."</td> ";
+                   // echo "<td>" .$row["h_sex"] .  "</td> ";
+                    //echo "<td>" .$row["h_name"] .  "</td> ";
+                    //echo "<td>" .$row["h_family"] .  "</td> ";
+                   // echo "<td>" .$row["h_idcasc"] .  "</td> ";
                     
 
                     //แก้ไขข้อมูล
-                    echo "<td><a href='history.php?act=edit&ID=$row[0]' class='btn btn-warning btn-xs'>แก้ไข</a></td> ";
+                   // echo "<td><a href='history.php?act=edit&ID=$row[0]' class='btn btn-warning btn-xs'>แก้ไข</a></td> ";
                     
                     //ลบข้อมูล
-                    echo "<td><a href='history_del_db.php?ID=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
+                   // echo "<td><a href='history_del_db.php?ID=$row[0]' onclick=\"return confirm('Do you want to delete this record? !!!')\" class='btn btn-danger btn-xs'>ลบ</a></td> ";
                   echo "</tr>";
                   }
                 echo "</table>";
