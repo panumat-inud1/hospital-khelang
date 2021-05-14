@@ -30,7 +30,7 @@
                     
                     $ckecks = "OPD-C1";
                     if($row["h_couter"]==$ckecks){
-
+          
                     echo "<td>" .$row["h_year"]."-".$row["h_id"]."</td> ";
                     echo "<td>" .$row["datesave"]."</td> ";
                     echo "<td>" .$row["h_couter"]."</td> ";
